@@ -755,7 +755,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: CERES-EBAF
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
       rsutcs:
         <<: *var_settings_cmip5
         preprocessor: default
@@ -764,7 +764,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: CERES-EBAF
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
       rsdt:
         <<: *var_settings_cmip5
         preprocessor: default
@@ -773,7 +773,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: CERES-EBAF
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
     additional_datasets:
       - {dataset: ACCESS1-0}
       - {dataset: ACCESS1-3}

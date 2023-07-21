@@ -174,8 +174,7 @@ diagnostics:
         reference_dataset: GPCP-SG
         mip: Amon
     additional_datasets:
-      - {dataset: GPCP-SG, project: obs4MIPs, level: L3, version: v2.2,
-         start_year: 1986, end_year: 2005, tier: 1}
+      - {dataset: GPCP-v2.2, project: obs4MIPs, start_year: 1986, end_year: 2005, tier: 1}
     scripts:
       clim:
         <<: *clim_settings
@@ -201,8 +200,7 @@ diagnostics:
         reference_dataset: MODIS
         mip: Amon
     additional_datasets:
-      - {dataset: MODIS, project: obs4MIPs, level: L3, version: C5,
-         start_year: 2001, end_year: 2010, tier: 1}
+      - {dataset: MODIS-1-0, project: obs4MIPs, start_year: 2001, end_year: 2010, tier: 1}
     scripts:
       clim:
         <<: *clim_settings

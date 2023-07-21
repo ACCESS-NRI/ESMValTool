@@ -396,7 +396,7 @@ diagnostics:
         exp: historical
         project: CMIP5
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7,
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
              start_year: 2001, end_year: 2005, tier: 1}
       rsutcs:
         reference_dataset: CERES-EBAF
@@ -404,7 +404,7 @@ diagnostics:
         exp: historical
         project: CMIP5
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7,
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
              start_year: 2001, end_year: 2005, tier: 1}
       rsdt:
         reference_dataset: CERES-EBAF
@@ -412,7 +412,7 @@ diagnostics:
         exp: historical
         project: CMIP5
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7,
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
              start_year: 2001, end_year: 2005, tier: 1}
     scripts:
       ecs_scatter:
@@ -689,8 +689,7 @@ diagnostics:
         mip: Amon
         project: CMIP6
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-             version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
           - {dataset: BCC-CSM2-MR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: BCC-ESM1, grid: gn, ensemble: r2i1p1f1}
           # - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
@@ -713,8 +712,7 @@ diagnostics:
         mip: Amon
         project: CMIP6
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-             version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
           - {dataset: BCC-CSM2-MR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: BCC-ESM1, grid: gn, ensemble: r2i1p1f1}
           # - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
@@ -737,8 +735,7 @@ diagnostics:
         mip: Amon
         project: CMIP6
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-             version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
           - {dataset: BCC-CSM2-MR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: BCC-ESM1, grid: gn, ensemble: r2i1p1f1}
           # - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}

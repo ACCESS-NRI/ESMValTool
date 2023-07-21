@@ -1477,7 +1477,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
     scripts:
       grading:
         <<: *grading_settings
@@ -1544,7 +1544,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
     scripts:
       grading:
         <<: *grading_settings
@@ -1613,7 +1613,7 @@ diagnostics:
   #    - {dataset: MRI-CGCM3}
   #    - {dataset: NorESM1-M}
   #    - {dataset: NorESM1-ME}
-  #    - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+  #    - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
   #  scripts:
   #    latlon:
   #      <<: *latlon_settings
@@ -1682,7 +1682,7 @@ diagnostics:
   #    - {dataset: MRI-CGCM3}
   #    - {dataset: NorESM1-M}
   #    - {dataset: NorESM1-ME}
-  #    - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+  #    - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
   #  scripts:
   #    latlon:
   #      <<: *latlon_settings
