@@ -197,7 +197,7 @@ diagnostics:
     variables:
       clt:
         preprocessor: clim
-        reference_dataset: MODIS
+        reference_dataset: MODIS-1-0
         mip: Amon
     additional_datasets:
       - {dataset: MODIS-1-0, project: obs4MIPs, start_year: 2001, end_year: 2010, tier: 1}
