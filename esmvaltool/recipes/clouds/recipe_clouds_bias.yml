@@ -171,10 +171,10 @@ diagnostics:
     variables:
       pr:
         preprocessor: clim
-        reference_dataset: GPCP-SG
+        reference_dataset: GPCP-V2.2
         mip: Amon
     additional_datasets:
-      - {dataset: GPCP-v2.2, project: obs4MIPs, start_year: 1986, end_year: 2005, tier: 1}
+      - {dataset: GPCP-V2.2, project: obs4MIPs, start_year: 1986, end_year: 2005, tier: 1}
     scripts:
       clim:
         <<: *clim_settings
