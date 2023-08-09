@@ -79,8 +79,7 @@ diagnostics:
         end_year: 2005
         project: CMIP5
         additional_datasets:
-          - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-             version: 1, tier: 3}
+          - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
           - {dataset: ACCESS1-0, ensemble: r1i1p1}
           # - {dataset: ACCESS1-3, ensemble: r1i1p1}
           - {dataset: bcc-csm1-1, ensemble: r1i1p1}
@@ -133,8 +132,7 @@ diagnostics:
         end_year: 2005
         project: CMIP5
         additional_datasets:
-          - {dataset: TRMM-L3, project: obs4MIPs, level: v7, version: 7A,
-             start_year: 1998, end_year: 2013, tier: 1}
+          - {dataset: TRMM, project: obs4MIPs, level: v7, start_year: 1998, end_year: 2013, tier: 1}
           - {dataset: ACCESS1-0, ensemble: r1i1p1}
           # - {dataset: ACCESS1-3, ensemble: r1i1p1}
           - {dataset: bcc-csm1-1, ensemble: r1i1p1}
@@ -166,8 +164,7 @@ diagnostics:
         mip: Amon
         frequency: mon
         additional_datasets:
-          - {dataset: TRMM-L3, project: obs4MIPs, level: v7, version: 7A,
-             start_year: 1998, end_year: 2013, tier: 1}
+          - {dataset: TRMM, project: obs4MIPs, level: v7, start_year: 1998, end_year: 2013, tier: 1}
     scripts:
       ecs_scatter:
         diag: itczidx
@@ -195,8 +192,7 @@ diagnostics:
         end_year: 2005
         project: CMIP5
         additional_datasets:
-          - {dataset: AIRS, project: obs4MIPs, level: L3, version: RetStd-v5,
-             start_year: 2003, end_year: 2010, tier: 1}
+          - {dataset: AIRS-2-1, project: obs4MIPs, level: L3, start_year: 2003, end_year: 2010, tier: 1}
           - {dataset: ACCESS1-0, ensemble: r1i1p1}
           # - {dataset: ACCESS1-3, ensemble: r1i1p1}
           - {dataset: bcc-csm1-1, ensemble: r1i1p1}
@@ -229,8 +225,7 @@ diagnostics:
         mip: Amon
         frequency: mon
         additional_datasets:
-          - {dataset: AIRS, project: obs4MIPs, level: L3, version: RetStd-v5,
-             start_year: 2003, end_year: 2010, tier: 1}
+          - {dataset: AIRS-2-1, project: obs4MIPs, level: L3, start_year: 2003, end_year: 2010, tier: 1}
     scripts:
       ecs_scatter:
         diag: humidx
@@ -274,8 +269,7 @@ diagnostics:
         end_year: 2005
         project: CMIP5
     additional_datasets:
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
       - {dataset: ACCESS1-0, ensemble: r1i1p1}
       # - {dataset: ACCESS1-3, ensemble: r1i1p1}
       - {dataset: bcc-csm1-1, ensemble: r1i1p1}
@@ -320,58 +314,36 @@ diagnostics:
     realms:
       - atmos
     additional_datasets:
-      - {dataset: ACCESS1-0, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
+      - {dataset: ACCESS1-0, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
       # - {dataset: ACCESS1-3, ensemble: r1i1p1,
       #    start_year: 1986, end_year: 2005}
-      - {dataset: bcc-csm1-1, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: bcc-csm1-1-m, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: BNU-ESM, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: CanESM2, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: CCSM4, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: CNRM-CM5, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: CSIRO-Mk3-6-0, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
+      - {dataset: bcc-csm1-1, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: bcc-csm1-1-m, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: BNU-ESM, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: CanESM2, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: CCSM4, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: CNRM-CM5, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: CSIRO-Mk3-6-0, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
       # - {dataset: FGOALS-g2, ensemble: r1i1p1,
       #    start_year: 1986, end_year: 2005}
-      - {dataset: GFDL-CM3, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: GFDL-ESM2G, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: GFDL-ESM2M, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: GISS-E2-H, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: GISS-E2-R, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: HadGEM2-ES, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: inmcm4, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: IPSL-CM5A-LR, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: IPSL-CM5B-LR, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: MIROC5, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: MIROC-ESM, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: MPI-ESM-LR, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
+      - {dataset: GFDL-CM3, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: GFDL-ESM2G, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: GFDL-ESM2M, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: GISS-E2-H, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: GISS-E2-R, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: HadGEM2-ES, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: inmcm4, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: IPSL-CM5A-LR, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: IPSL-CM5B-LR, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: MIROC5, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: MIROC-ESM, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: MPI-ESM-LR, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
       # - {dataset: MPI-ESM-MR, ensemble: r1i1p1,
       #    start_year: 1986, end_year: 2005}
       # - {dataset: MPI-ESM-P, ensemble: r1i1p1,
       #    start_year: 1986, end_year: 2005}
-      - {dataset: MRI-CGCM3, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
-      - {dataset: NorESM1-M, ensemble: r1i1p1,
-         start_year: 1986, end_year: 2005}
+      - {dataset: MRI-CGCM3, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
+      - {dataset: NorESM1-M, ensemble: r1i1p1, start_year: 1986, end_year: 2005}
     variables:
       ts:
         reference_dataset: HadISST
@@ -379,8 +351,8 @@ diagnostics:
         exp: historical
         project: CMIP5
         additional_datasets:
-          - {dataset: HadISST, project: OBS, type: reanaly, version: 1,
-             start_year: 2001, end_year: 2005, tier: 2}
+          - {dataset: HadISST, project: OBS, type: reanaly, version: 1, start_year: 2001, end_year: 2005,
+             tier: 2}
       hur:
         preprocessor: pp500
         reference_dataset: ERA-Interim
@@ -388,32 +360,32 @@ diagnostics:
         exp: historical
         project: CMIP5
         additional_datasets:
-          - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1,
-             start_year: 2001, end_year: 2005, tier: 3}
+          - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, start_year: 2001, end_year: 2005,
+             tier: 3}
       rsut:
         reference_dataset: CERES-EBAF
         mip: Amon
         exp: historical
         project: CMIP5
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7,
-             start_year: 2001, end_year: 2005, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, start_year: 2001, end_year: 2005,
+             tier: 1}
       rsutcs:
         reference_dataset: CERES-EBAF
         mip: Amon
         exp: historical
         project: CMIP5
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7,
-             start_year: 2001, end_year: 2005, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, start_year: 2001, end_year: 2005,
+             tier: 1}
       rsdt:
         reference_dataset: CERES-EBAF
         mip: Amon
         exp: historical
         project: CMIP5
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7,
-             start_year: 2001, end_year: 2005, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, start_year: 2001, end_year: 2005,
+             tier: 1}
     scripts:
       ecs_scatter:
         diag: covrefl
@@ -440,14 +412,12 @@ diagnostics:
         mip: Amon
         project: CMIP6
         additional_datasets:
-          - {dataset: TRMM-L3, project: obs4MIPs, level: v7,
-             version: 7A, tier: 1}
+          - {dataset: TRMM, project: obs4MIPs, level: v7, tier: 1}
           - {dataset: BCC-CSM2-MR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: BCC-ESM1, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CESM2, grid: gn, ensemble: r1i1p1f1}
-          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn,
-             ensemble: r1i1p1f1}
+          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CNRM-CM6-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: CNRM-ESM2-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: GFDL-CM4, grid: gr1, ensemble: r1i1p1f1}
@@ -463,8 +433,7 @@ diagnostics:
         start_year: 1998
         end_year: 2013
         additional_datasets:
-          - {dataset: TRMM-L3, project: obs4MIPs, level: v7,
-             version: 7A, tier: 1}
+          - {dataset: TRMM, project: obs4MIPs, level: v7, tier: 1}
     scripts:
       ecs_scatter:
         diag: itczidx
@@ -491,14 +460,12 @@ diagnostics:
         mip: Amon
         project: CMIP6
         additional_datasets:
-          - {dataset: AIRS, project: obs4MIPs, level: L3,
-             version: RetStd-v5, tier: 1}
+          - {dataset: AIRS-2-1, project: obs4MIPs, level: L3, tier: 1}
           - {dataset: BCC-CSM2-MR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: BCC-ESM1, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CESM2, grid: gn, ensemble: r1i1p1f1}
-          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn,
-             ensemble: r1i1p1f1}
+          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CNRM-CM6-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: CNRM-ESM2-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: GFDL-CM4, grid: gr1, ensemble: r1i1p1f1}
@@ -515,8 +482,7 @@ diagnostics:
         start_year: 2003
         end_year: 2010
         additional_datasets:
-          - {dataset: AIRS, project: obs4MIPs, level: L3,
-             version: RetStd-v5, tier: 1}
+          - {dataset: AIRS-2-1, project: obs4MIPs, level: L3, tier: 1}
     scripts:
       ecs_scatter:
         diag: humidx
@@ -563,8 +529,7 @@ diagnostics:
       - {dataset: BCC-ESM1, grid: gn, ensemble: r1i1p1f1}
       - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
       - {dataset: CESM2, grid: gn, ensemble: r1i1p1f1}
-      - {dataset: CESM2-WACCM, institute: NCAR, grid: gn,
-         ensemble: r1i1p1f1}
+      - {dataset: CESM2-WACCM, institute: NCAR, grid: gn, ensemble: r1i1p1f1}
       - {dataset: CNRM-CM6-1, grid: gr, ensemble: r1i1p1f2}
       - {dataset: CNRM-ESM2-1, grid: gr, ensemble: r1i1p1f2}
       - {dataset: GFDL-CM4, grid: gr1, ensemble: r1i1p1f1}
@@ -573,8 +538,7 @@ diagnostics:
       - {dataset: IPSL-CM6A-LR, grid: gr, ensemble: r15i1p1f1}
       - {dataset: MIROC6, grid: gn, ensemble: r1i1p1f1}
       - {dataset: MRI-ESM2-0, grid: gn, ensemble: r1i1p1f1}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
     scripts:
       ecs_scatter:
         diag: ltmi
@@ -604,8 +568,7 @@ diagnostics:
       - {dataset: BCC-ESM1, grid: gn, ensemble: r1i1p1f1}
       - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
       - {dataset: CESM2, grid: gn, ensemble: r1i1p1f1}
-      - {dataset: CESM2-WACCM, institute: NCAR, grid: gn,
-         ensemble: r1i1p1f1}
+      - {dataset: CESM2-WACCM, institute: NCAR, grid: gn, ensemble: r1i1p1f1}
       - {dataset: CNRM-CM6-1, grid: gr, ensemble: r1i1p1f2}
       - {dataset: CNRM-ESM2-1, grid: gr, ensemble: r1i1p1f2}
       - {dataset: GFDL-CM4, grid: gr1, ensemble: r1i1p1f1}
@@ -614,8 +577,7 @@ diagnostics:
       - {dataset: IPSL-CM6A-LR, grid: gr, ensemble: r15i1p1f1}
       - {dataset: MIROC6, grid: gn, ensemble: r1i1p1f1}
       - {dataset: MRI-ESM2-0, grid: gn, ensemble: r1i1p1f1}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
     scripts:
       ecs_scatter:
         diag: shhc
@@ -646,8 +608,7 @@ diagnostics:
           - {dataset: BCC-ESM1, grid: gn, ensemble: r2i1p1f1}
           # - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CESM2, grid: gn, ensemble: r1i1p1f1}
-          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn,
-             ensemble: r1i1p1f1}
+          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CNRM-CM6-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: CNRM-ESM2-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: GFDL-CM4, grid: gr1, ensemble: r1i1p1f1}
@@ -665,14 +626,12 @@ diagnostics:
         mip: Amon
         project: CMIP6
         additional_datasets:
-          - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-             version: 1, tier: 3}
+          - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
           - {dataset: BCC-CSM2-MR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: BCC-ESM1, grid: gn, ensemble: r2i1p1f1}
           # - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CESM2, grid: gn, ensemble: r1i1p1f1}
-          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn,
-             ensemble: r1i1p1f1}
+          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CNRM-CM6-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: CNRM-ESM2-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: GFDL-CM4, grid: gr1, ensemble: r1i1p1f1}
@@ -689,14 +648,12 @@ diagnostics:
         mip: Amon
         project: CMIP6
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-             version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
           - {dataset: BCC-CSM2-MR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: BCC-ESM1, grid: gn, ensemble: r2i1p1f1}
           # - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CESM2, grid: gn, ensemble: r1i1p1f1}
-          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn,
-             ensemble: r1i1p1f1}
+          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CNRM-CM6-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: CNRM-ESM2-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: GFDL-CM4, grid: gr1, ensemble: r1i1p1f1}
@@ -713,14 +670,12 @@ diagnostics:
         mip: Amon
         project: CMIP6
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-             version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
           - {dataset: BCC-CSM2-MR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: BCC-ESM1, grid: gn, ensemble: r2i1p1f1}
           # - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CESM2, grid: gn, ensemble: r1i1p1f1}
-          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn,
-             ensemble: r1i1p1f1}
+          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CNRM-CM6-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: CNRM-ESM2-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: GFDL-CM4, grid: gr1, ensemble: r1i1p1f1}
@@ -737,14 +692,12 @@ diagnostics:
         mip: Amon
         project: CMIP6
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-             version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
           - {dataset: BCC-CSM2-MR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: BCC-ESM1, grid: gn, ensemble: r2i1p1f1}
           # - {dataset: CAMS-CSM1-0, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CESM2, grid: gn, ensemble: r1i1p1f1}
-          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn,
-             ensemble: r1i1p1f1}
+          - {dataset: CESM2-WACCM, institute: NCAR, grid: gn, ensemble: r1i1p1f1}
           - {dataset: CNRM-CM6-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: CNRM-ESM2-1, grid: gr, ensemble: r1i1p1f2}
           - {dataset: GFDL-CM4, grid: gr1, ensemble: r1i1p1f1}

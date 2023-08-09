@@ -104,7 +104,7 @@ diagnostics:
     additional_datasets:
       - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
     scripts:
-      grading: &grading_settings
+      grading:
         script: perfmetrics/main.ncl
         plot_type: cycle_zonal
         time_avg: yearly
@@ -238,7 +238,7 @@ diagnostics:
         preprocessor: ppNOLEV
         reference_dataset: GPCP-SG
     additional_datasets:
-      - {dataset: GPCP-SG, project: obs4MIPs, level: L3, version: v2.2, tier: 1}
+      - {dataset: GPCP-V2.2, project: obs4MIPs, level: L3, tier: 1}
     scripts:
       grading:
         script: perfmetrics/main.ncl

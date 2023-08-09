@@ -118,8 +118,7 @@ preprocessors:
       end_longitude: 360
 
   tropical_mask_40_500hPa:
-    <<: *tropical_mask_40_pp
-    <<: *pp500
+    <<: [*tropical_mask_40_pp, *pp500]
 
   zonal_mean:
     regrid:
@@ -246,12 +245,12 @@ diagnostics:
           plot_ylim: [1.5, 6.0]
           project: CMIP5
           original_paper: all
-          provenance_statistics: ['mean', 'anomaly']
-          provenance_domains: ['global']
-          provenance_authors: ['schlund_manuel']
-          provenance_references: ['gregory04grl']
-          provenance_realms: ['atmos']
-          provenance_themes: ['phys']
+          provenance_statistics: [mean, anomaly]
+          provenance_domains: [global]
+          provenance_authors: [schlund_manuel]
+          provenance_references: [gregory04grl]
+          provenance_realms: [atmos]
+          provenance_themes: [phys]
 
   diag_y_ecs_cmip6:
     description: Equilibrium Climate Sensitivity for CMIP6.
@@ -860,7 +859,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: GPCP-SG
         additional_datasets:
-          - {dataset: GPCP-SG, project: obs4MIPs, level: L3, version: v2.2, tier: 1}
+          - {dataset: GPCP-V2.2, project: obs4MIPs, level: L3, tier: 1}
     additional_datasets:
       - {dataset: ACCESS1-0}
       - {dataset: ACCESS1-3}
@@ -921,7 +920,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: GPCP-SG
         additional_datasets:
-          - {dataset: GPCP-SG, project: obs4MIPs, level: L3, version: v2.2, tier: 1}
+          - {dataset: GPCP-V2.2, project: obs4MIPs, level: L3, tier: 1}
     additional_datasets:
       - {dataset: ACCESS-CM2,      ensemble: r1i1p1f1, grid: gn, institute: CSIRO-ARCCSS}
       - {dataset: ACCESS-ESM1-5,   ensemble: r1i1p1f1, grid: gn}
@@ -996,7 +995,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: AIRS
         additional_datasets:
-          - {dataset: AIRS, project: obs4MIPs, level: L3, version: RetStd-v5, tier: 1}
+          - {dataset: AIRS-2-1, project: obs4MIPs, level: L3, tier: 1}
     additional_datasets:
       - {dataset: ACCESS1-0}
       - {dataset: ACCESS1-3}
@@ -1057,7 +1056,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: AIRS
         additional_datasets:
-          - {dataset: AIRS, project: obs4MIPs, level: L3, version: RetStd-v5, tier: 1}
+          - {dataset: AIRS-2-1, project: obs4MIPs, level: L3, tier: 1}
     additional_datasets:
       - {dataset: ACCESS-CM2,      ensemble: r1i1p1f1, grid: gn, institute: CSIRO-ARCCSS}
       - {dataset: ACCESS-ESM1-5,   ensemble: r1i1p1f1, grid: gn}
@@ -1283,7 +1282,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: CERES-EBAF
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
       rsutcs:
         <<: *var_settings_cmip5
         preprocessor: default
@@ -1292,7 +1291,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: CERES-EBAF
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
       rsdt:
         <<: *var_settings_cmip5
         preprocessor: default
@@ -1301,7 +1300,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: CERES-EBAF
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
     additional_datasets:
       - {dataset: ACCESS1-0}
       - {dataset: ACCESS1-3}
@@ -1380,7 +1379,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: CERES-EBAF
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
       rsutcs:
         <<: *var_settings_cmip6
         preprocessor: default
@@ -1389,7 +1388,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: CERES-EBAF
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
       rsdt:
         <<: *var_settings_cmip6
         preprocessor: default
@@ -1398,7 +1397,7 @@ diagnostics:
         end_year: 2005
         reference_dataset: CERES-EBAF
         additional_datasets:
-          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, version: Ed2-7, tier: 1}
+          - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
     additional_datasets:
       - {dataset: ACCESS-CM2,      ensemble: r1i1p1f1, grid: gn, institute: CSIRO-ARCCSS}
       - {dataset: ACCESS-ESM1-5,   ensemble: r1i1p1f1, grid: gn}
@@ -1883,9 +1882,9 @@ diagnostics:
         exp: [historical, rcp85]
         start_year: 2005
         end_year: 2010
-        reference_dataset: 'AIRS-2-0|MLS-AURA'
+        reference_dataset: 'AIRS-2-1|MLS-AURA'
         additional_datasets:
-          - {dataset: AIRS-2-0, project: obs4MIPs, level: L3, version: v2, tier: 1}
+          - {dataset: AIRS-2-1, project: obs4MIPs, level: L3, tier: 1}
           - {dataset: MLS-AURA, project: OBS6, type: sat, version: '004', tier: 3}
     additional_datasets:
       - {dataset: ACCESS1-0}
@@ -1938,9 +1937,9 @@ diagnostics:
         mip: Amon
         start_year: 2005
         end_year: 2010
-        reference_dataset: 'AIRS-2-0|MLS-AURA'
+        reference_dataset: AIRS-2-1|MLS-AURA
         additional_datasets:
-          - {dataset: AIRS-2-0, project: obs4MIPs, level: L3, version: v2, tier: 1}
+          - {dataset: AIRS-2-1, project: obs4MIPs, level: L3, tier: 1}
           - {dataset: MLS-AURA, project: OBS6, type: sat, version: '004', tier: 3}
     additional_datasets:
       - {dataset: ACCESS-CM2,      ensemble: r1i1p1f1, grid: gn, institute: CSIRO-ARCCSS}
@@ -2166,10 +2165,7 @@ diagnostics:
     scripts:
       multiple_constraints:
         <<: *diag_multiple_constraints
-        ancestors: [
-          'diag_y_ecs_cmip5/ecs',
-          'diag_assess_zhai_constraint_cmip5_x/ecs_predictor',
-        ]
+        ancestors: [diag_y_ecs_cmip5/ecs, diag_assess_zhai_constraint_cmip5_x/ecs_predictor]
         group_by: original_paper
         numbers_as_markers: false
         plot_regression_line_mean: false

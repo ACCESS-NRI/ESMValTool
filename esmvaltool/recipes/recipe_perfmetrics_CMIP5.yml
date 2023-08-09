@@ -236,8 +236,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ESACCI-SOILMOISTURE, project: OBS, type: sat,
-         version: L3S-SSMV-COMBINED-v4.2, tier: 2}
+      - {dataset: ESACCI-SOILMOISTURE, project: OBS, type: sat, version: L3S-SSMV-COMBINED-v4.2, tier: 2}
     scripts:
       grading: &grading_settings
         script: perfmetrics/main.ncl
@@ -330,12 +329,10 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
-      zonal: &zonal_settings
+      zonal:
         script: perfmetrics/main.ncl
         # Plot type ('cycle', 'zonal', 'latlon', 'cycle_latlon', 'cycle_zonal')
         plot_type: zonal
@@ -417,8 +414,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ESACCI-CLOUD, project: OBS, type: sat,
-         version: AVHRR-AMPM-fv3.0, tier: 2}
+      - {dataset: ESACCI-CLOUD, project: OBS, type: sat, version: AVHRR-AMPM-fv3.0, tier: 2}
       - {dataset: PATMOS-x, project: OBS, type: sat, version: NOAA, tier: 2}
     scripts:
       latlon: &latlon_settings
@@ -514,19 +510,16 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       latlon:
         <<: *latlon_settings
         # Add global average to the plot
         show_global_avg: false
         # Contour levels for absolute plot
-        abs_levs: [240, 243, 246, 249, 252, 255, 258,
-                   261, 264, 267, 270, 273, 276, 279,
-                   282, 285, 288, 291, 294, 297, 300]
+        abs_levs: [240, 243, 246, 249, 252, 255, 258, 261, 264, 267, 270, 273, 276,
+                   279, 282, 285, 288, 291, 294, 297, 300]
         # Contour levels for difference plot
         diff_levs: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
       grading:
@@ -595,8 +588,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ESACCI-SST, project: OBS, type: sat,
-         version: 2.2, tier: 2}
+      - {dataset: ESACCI-SST, project: OBS, type: sat, version: 2.2, tier: 2}
       - {dataset: HadISST, project: OBS, type: reanaly, version: 1, tier: 2}
     scripts:
       grading:
@@ -670,8 +662,7 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: GPCP-SG, project: obs4MIPs, level: L3,
-         version: v2.2, tier: 1}
+      - {dataset: GPCP-V2.2, project: obs4MIPs, level: L3, tier: 1}
     scripts:
       grading:
         <<: *grading_settings
@@ -743,10 +734,8 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       grading:
         <<: *grading_settings
@@ -811,8 +800,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-         version: Ed2-7, tier: 1}
+      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
     scripts:
       latlon:
         <<: *latlon_settings
@@ -883,8 +871,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-         version: Ed2-7, tier: 1}
+      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
     scripts:
       latlon:
         <<: *latlon_settings
@@ -958,8 +945,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-         version: Ed2-7, tier: 1}
+      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
     scripts:
       grading:
         <<: *grading_settings
@@ -1024,10 +1010,8 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: AIRS, project: obs4MIPs, level: L3,
-         version: RetStd-v5, tier: 1}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
+      - {dataset: AIRS-2-1, project: obs4MIPs, level: L3, tier: 1}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
     scripts:
       grading:
         <<: *grading_settings
@@ -1090,8 +1074,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B,
-         version: Ed2-7, tier: 1}
+      - {dataset: CERES-EBAF, project: obs4MIPs, level: L3B, tier: 1}
     scripts:
       grading:
         <<: *grading_settings
@@ -1165,10 +1148,8 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       grading:
         <<: *grading_settings
@@ -1241,10 +1222,8 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       grading:
         <<: *grading_settings
@@ -1318,10 +1297,8 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       grading:
         <<: *grading_settings
@@ -1394,10 +1371,8 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       grading:
         <<: *grading_settings
@@ -1472,10 +1447,8 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       cycle: &cycle_settings
         script: perfmetrics/main.ncl
@@ -1562,10 +1535,8 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       cycle:
         <<: *cycle_settings
@@ -1646,10 +1617,8 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       cycle:
         <<: *cycle_settings
@@ -1724,10 +1693,8 @@ diagnostics:
       - {dataset: MRI-ESM1}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ERA-Interim, project: OBS6, type: reanaly,
-         version: 1, tier: 3}
-      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly,
-         version: 1, tier: 2}
+      - {dataset: ERA-Interim, project: OBS6, type: reanaly, version: 1, tier: 3}
+      - {dataset: NCEP-NCAR-R1, project: OBS6, type: reanaly, version: 1, tier: 2}
     scripts:
       cycle:
         <<: *cycle_settings
@@ -1774,8 +1741,7 @@ diagnostics:
       - {dataset: MRI-CGCM3}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ESACCI-AEROSOL, project: OBS, type: sat,
-         version: SU-v4.21, tier: 2}
+      - {dataset: ESACCI-AEROSOL, project: OBS, type: sat, version: SU-v4.21, tier: 2}
       - {dataset: MODIS, project: OBS, type: sat, version: MYD08-M3, tier: 3}
     scripts:
       grading:
@@ -1812,8 +1778,7 @@ diagnostics:
       - {dataset: MIROC-ESM}
       - {dataset: MIROC-ESM-CHEM}
       - {dataset: MRI-CGCM3}
-      - {dataset: ESACCI-AEROSOL, project: OBS, type: sat,
-         version: SU-v4.21, tier: 2}
+      - {dataset: ESACCI-AEROSOL, project: OBS, type: sat, version: SU-v4.21, tier: 2}
     scripts:
       grading:
         <<: *grading_settings
@@ -1849,8 +1814,7 @@ diagnostics:
       - {dataset: MIROC-ESM-CHEM}
       - {dataset: NorESM1-M}
       - {dataset: NorESM1-ME}
-      - {dataset: ESACCI-AEROSOL, project: OBS, type: sat,
-         version: SU-v4.21, tier: 2}
+      - {dataset: ESACCI-AEROSOL, project: OBS, type: sat, version: SU-v4.21, tier: 2}
     scripts:
       grading:
         <<: *grading_settings
@@ -1885,8 +1849,7 @@ diagnostics:
       - {dataset: MIROC-ESM}
       - {dataset: MIROC-ESM-CHEM}
       - {dataset: MRI-CGCM3}
-      - {dataset: ESACCI-AEROSOL, project: OBS, type: sat,
-         version: SU-v4.21, tier: 2}
+      - {dataset: ESACCI-AEROSOL, project: OBS, type: sat, version: SU-v4.21, tier: 2}
     scripts:
       grading:
         <<: *grading_settings
@@ -1946,15 +1909,10 @@ diagnostics:
         # Sort dataset in alphabetic order (excluding MMM)
         sort: true
         # Sort diagnostics in a specific order (name = 'diagnositic'-'region')
-        diag_order: ['ta850-global', 'ta200-global', 'ua850-global',
-                     'ua200-global', 'va850-global', 'va200-global',
-                     'zg500-global', 'hus400-global', 'tas-global',
-                     'ts-global', 'pr-global', 'clt-global', 'rlut-global',
-                     'rsut-global', 'lwcre-global', 'swcre-global',
-                     'od550aer-global', 'od870aer-global', 'abs550aer-global',
-#                     'od550lt1aer-global', 'toz-global', 'toz-shpolar',
-                     'toz-global', 'toz-shpolar',
-                     'sm-global']
+        diag_order: [ta850-global, ta200-global, ua850-global, ua200-global, va850-global,
+                     va200-global, zg500-global, hus400-global, tas-global, ts-global, pr-global,
+                     clt-global, rlut-global, rsut-global, lwcre-global, swcre-global, od550aer-global,
+                     od870aer-global, abs550aer-global, toz-global, toz-shpolar, sm-global]
       taylor:
         script: perfmetrics/collect.ncl
         ancestors: ['*/grading']
