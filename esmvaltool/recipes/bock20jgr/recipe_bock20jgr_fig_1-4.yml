@@ -400,7 +400,7 @@ diagnostics:
     variables:
       pr:
         <<: *var_cmip6_bias
-        reference_dataset: GPCP-SG
+        reference_dataset: GPCP-V2.3
         additional_datasets: *cmip6_tas
     additional_datasets:
       - {dataset: GPCP-V2.3, project: obs4MIPs, level: L3, tier: 1}
