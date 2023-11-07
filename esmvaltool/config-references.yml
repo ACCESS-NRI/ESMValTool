@@ -111,6 +111,11 @@ authors:
     name: Bellprat, Omar
     institute: BSC, Spain
     orcid: https://orcid.org/0000-0001-6434-1793
+  beucher_romain:
+    name: Beucher, Romain
+    institute: ACCESS-NRI, Australia
+    orcid: https://orcid.org/0000-0003-3891-5444
+    github: rbeucher
   berg_peter:
     name: Berg, Peter
     institute: SMHI, Sweden
@@ -153,6 +158,10 @@ authors:
     name: Chen, Jack
     institute: NCAR, USA
     orcid:
+  chun_felicity:
+    name: Chun, Felicity
+    institute: ACCESS-NRI
+    github: flicj191
   cionni_irene:
     name: Cionni, Irene
     institute: ENEA, Italy
@@ -541,14 +550,18 @@ authors:
     name: Willén, Ulrika
     institute: SMHI, Sweden
     orcid:
-  zechlau_sabrina:
-    name: Zechlau, Sabrina
-    institute: DLR, Germany
-    orcid: https://orcid.org/0000-0001-5343-2446
   williams_keith:
     name: Williams, Keith
     institute: MetOffice, UK
     orcid:
+  zechlau_sabrina:
+    name: Zechlau, Sabrina
+    institute: DLR, Germany
+    orcid: https://orcid.org/0000-0001-5343-2446
+  zeng_rhaegar:
+    name: Zeng, Rhaegar
+    institute: ACCESS-NRI, Australia
+    github: rhaegar325
   # Viewers (not active developers)
   balaji_venkatramani:
     name: Balaji, Venkatramani
